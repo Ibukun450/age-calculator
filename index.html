@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,900;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="input-container">
+
+      <div class="">
+        <label for="day-input" id="label1">DAY</label>
+        <input type="number" placeholder="DD" id="day-input">
+        <div id="error"></div>
+      </div>
+      
+      <div class="">
+        <label for="month-input" id="label2">MONTH</label>
+        <input type="number" placeholder="MM" id="month-input">
+        <div id="error2"></div>
+      </div>
+
+      <div class="">
+        <label for="year-input" id="label3">YEAR</label>
+        <input type="number" placeholder="YYYY" id="year-input">
+        <div id="error3"></div>
+      </div>
+      
+    </div>
+    <div class="button-div">
+      <button id="button" onclick="myFunction()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg"></button>
+      <hr>
+    </div>
+    
+    <div class="main-div">
+      <div id="spec1" class="spec spec1">
+        <p id="main-p1">--</p>
+        <p>years</p>
+      </div>
+      <div id="spec2" class="spec spec2">
+        <p id="main-p2">--</p>
+        <p>months</p>
+      </div>
+      <div id="spec3" class="spec spec3">
+        <p id="main-p3">--</p>
+        <p>days</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

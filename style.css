@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    /* Adjust the width, height, and other styles as needed */
+    width: 500px; /* Adjust the maximum width as needed */
+    height: 600px;
+    padding: 40px;
+    height: auto; /* Allow it to expand based on content */
+    background-color: #fff;
+    border-radius: 20px 20px 100px 20px;
+    z-index: 1;
+}
+
+.input-container {
+    display: flex;
+    padding-bottom: 0px;
+}
+
+.input-container label {
+    font-size: 11px;
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+}
+
+.input-container input {
+    display: block;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 1%, 44%, 0.24);
+    font-size: 20px;
+    color: hsl(0, 1%, 44%);
+    padding-left: 15px;
+    font-weight: bolder;
+    opacity: 0.9;
+}
+.input-container input:hover {
+    cursor: pointer;
+}
+.input-container div {
+    padding-right: 20px;
+}
+
+.button-div {
+    width: 500px;
+    text-align: end;
+    margin-top: -10px;
+}
+.button-div button {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50px;
+    padding: 20px;
+    border: none;
+}
+.button-div button:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.button-div img {
+    width: 30px;
+}
+
+hr {
+    position: relative;
+    top: -43px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.main-div p {
+    margin: 0;
+    padding: 0;
+}
+
+.spec {
+    display: flex; 
+}
+
+#main-p1, #main-p2, #main-p3 {
+    color: hsl(259, 100%, 65%);
+    margin: 0;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.spec p:nth-child(2) {
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+    margin: 0;
+}
+
+@media screen and (max-width: 610px) {
+    .button-div {
+        text-align: center;
+        margin: 10px;
+    }
+}
